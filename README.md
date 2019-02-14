@@ -1,9 +1,11 @@
 # coredump-translator
 Translate the coredump file to get register and call stack information
-Usage: 
+
+## Usage: 
     python core_translator.py <coredump filepath>
    
-Example:
+## Example:
+```
 [root@matrix coredump-translator]# python core_translator.py core.32716
 Exception Information:
 rax            0x400657 4195927
@@ -36,3 +38,4 @@ gs             0x0      0
 #3  0x00000000004005af in main ()
 #4  0x00007f450f81fc05 in __libc_start_main (main=0x4005a1 <main>, argc=1, ubp_av=0x7ffd0269f978, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffd0269f968) at ../csu/libc-start.c:274
 #5  0x0000000000400469 in _start ()
+```
